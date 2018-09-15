@@ -12,7 +12,7 @@ public class Person implements Cloneable {
      *  year.  
      * Note:  This is not the same as java.util.Date
      */
-	public class Date implements Comparable, Cloneable {
+	public class Date implements Comparable<Date> {
 		/** Static Array of valid months (in month index order) */
 		//removed static because of error: The field VALID_MONTHS cannot be declared static in a non-static inner type, unless initialized with a constant expression
 	    private final String[] VALID_MONTHS = new String[] {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
