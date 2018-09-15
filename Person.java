@@ -348,15 +348,15 @@ public class Person implements Cloneable {
 	    }
 
 	    // New methods
-	    public Object clone() {
-			try
-			{
-				return super.clone();
-			}
-			catch (CloneNotSupportedException e) {
-				return null;
-			}
+	    public Date clone() {
+		try
+		{
+			return (Date)super.clone();
 		}
+		catch (CloneNotSupportedException e) {
+			return null;
+		}
+	    }
 	    
 	    // New method
 	    public int compareTo(Date d) {
@@ -627,5 +627,16 @@ public class Person implements Cloneable {
     	} else {
     		return null;
     	}
+    }
+	
+    // New method
+    public Person clone() {
+	try
+	{
+		return (Person) super.clone();
+	}
+	catch (CloneNotSupportedException e) {
+		return null;
+	}
     }
 }
